@@ -1,0 +1,12 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("../fonts/BPG2017DejaVuSansCondensed.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/BPG2017DejaVuSansCondensed.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/BPG2017DejaVuSansCondensed.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/BPG2017DejaVuSansCondensed.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/BPG2017DejaVuSansCondensed.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/BPG2017DejaVuSansCondensed.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

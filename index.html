@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Docflow</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="main_nav navbar navbar-expand-lg justify-content-between fixed-top shadow-sm">
+        <button id="sidebar-toggle" class="btn btn-link d-flex align-items-center">
+          <i class="fas fa-bars dropdown_icon mr-3"></i>
+          <h1 class="web_title">docflow</h1>
+        </button>
+        <div>
+          <ul class="main_nav_items" id="main_nav_items">
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link nav_item--active"><span
+                  class="nav_item-border">მთავარი</span></a></li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link"><span class="nav_item-border">საცავი</span></a>
+            </li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link"><span
+                  class="nav_item-border">რეპორტები</span></a></li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link nav_item-link-icon" data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content="Settings"><span
+                  class="fa fa-cog"></span></a></li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link nav_item-link-icon" data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content="Help"><span
+                  class="fa fa-question-circle"></span></a></li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link nav_item-link-icon" data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content="Mail"><span
+                  class="fa fa-envelope"></span></a></li>
+            <li class="nav_item pl-3"><a href="#" class="nav_item-link nav_item-link-icon" data-container="body"
+                data-toggle="popover" data-placement="bottom" data-content="Notifications"><span
+                  class="fa fa-bell bell-icon"><span class="bell-icon-circle"></span></span></a></li>
+            <li class="nav_item ml-3 d-none d-md-block"><a href="#" class="nav_item-avatar-link">
+                <img src="images/Group 700.png" alt="">
+                <div class="avatar-bg ml-2"><span class="avatar">s</span></div>
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sidebar" class="bg-white border-right shadow-sm">
+    <div class="sidebar-wrap">
+      <button type="button" class="btn btn-white shadow-sm rounded sidebar_add-button">
+        <img src="images/Group 699.png" alt="">
+        დამატება
+      </button>
+      <div class="sidebar-contents pt-2">
+        <div class="sidebar-items-title">ჩემი დავალებები</div>
+        <ul class="sidebar-items-list">
+          <li><a href="#" class="sidebar-item sidebar-item--active">
+              <div><i class="fas fa-hourglass mr-3 sidebar_icon"></i>შესასრულებელი</div> <span
+                class="sidebar-item-number">5</span>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><i class="fas fa-flag mr-3 sidebar_icon"></i>შესრულებული</div>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><i class="fas fa-eye mr-3 sidebar_icon"></i>ზედამხვედველობის ქვეშ</div> <span
+                class="sidebar-item-number">23</span>
+            </a></li>
+        </ul>
+        <div class="sidebar-items-title">პროცესები</div>
+        <ul class="sidebar-items-list">
+          <li><a href="#" class="sidebar-item">
+              <div><i class="fas fa-file mr-3 sidebar_icon"></i>დრაფტი</div> <span class="sidebar-item-number">5</span>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><i class="fas fa-share-alt mr-3 sidebar_icon"></i>პროცესში</div><span
+                class="sidebar-item-number">65</span>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><i class="fas fa-check-circle mr-3 sidebar_icon"></i>დასრულებული</div>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><span class="fa fa-bell mr-3 sidebar_icon"></span>გამოთხოვილი</div>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><span class="fa fa-bell mr-3 sidebar_icon"></span>ზედამხვედველობის ქვეშ</div>
+            </a></li>
+          <li><a href="#" class="sidebar-item">
+              <div><span class="fa fa-bell mr-3 sidebar_icon"></span>ყველა</div>
+            </a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="shadow-sm bg-white border table_content-item justify-content-between">
+        <div>
+          <span>ჩემი დავალებები</span>
+          <span class="disabled_text"><i class="fa fa-angle-right pr-1"></i>შესასრულებელი</span>
+        </div>
+        <div class="filter_icons">
+          <a href="#"><i class="fas fa-search filter_icon filter_icon-search"></i></a>
+          <form class="form-inline my-2 my-lg-0">
+            <input class=" mr-sm-2 search_button" type="search" placeholder="ძიება" aria-label="Search">
+          </form>
+          <a href="#"><i class="fas fa-bars filter_icon"></i></a>
+          <a href="#"><i class="fas fa-cloud-download-alt filter_icon" download></i></a>
+        </div>
+      </div>
+
+      <div class="shadow-sm bg-white border table_content-item">
+        <a href="#" class="table_type">
+          ტიპი: დასავიზებლად
+        </a>
+        <a href="#" class="table_filter" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="fas fa-plus"></i> გაფილტვრა
+        </a>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">გაფილტვრა</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">დახურვა</button>
+                <button type="button" class="btn btn-primary">შენახვა</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+          <table class="table shadow-sm table_content">
+              <thead>
+                <tr class="table_header-cell">
+                  <th scope="col" class="text-center"><img src="images/Path 1164.png" alt=""> </th>
+                  <th scope="col">თემა </th>
+                  <th scope="col">სამიზნე ობიექტი</th>
+                  <th scope="col">ინიციატორი</th>
+                  <th scope="col">მიმღები</th>
+                  <th scope="col">ბოლო ვადა</th>
+                  <th scope="col" class="text-right"><i class="fa fa-ellipsis-v"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-id-card-alt icon-idCard"></i></td>
+                  <td class="table_standart-cell"> სახელშეკრულებო და მიღება-ჩაბარების აქტის განცხადება</td>
+                  <td class="table_standart-cell">სოფიო გაჩეჩილაძე</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე, 53 სხვა</td>
+                  <td class="table_standart-cell">20/01/2019</td>
+                  <td class="text-right table_standart-cell"><a href="#" class="fa fa-paperclip filter_icon"></a></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-shopping-cart icon-shopping"></i></td>
+                  <td class="table_standart-cell">ინვენტარის შესყიდვა</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">ერეკლე დოლიძე </td>
+                  <td class="table_standart-cell">10/01/2019</td>
+                  <td class="text-right table_standart-cell"><a href="#" class="fa fa-paperclip filter_icon"></a></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-university icon-university"></i></td>
+                  <td class="table_standart-cell">ბონუსის გაცემა</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">ნიკოლოზ რეხვიაშვილი</td>
+                  <td class="table_standart-cell">31/02/2019</td>
+                  <td class="text-right table_standart-cell"><a href="#" class="fa fa-check filter_icon"></a><a href="#"
+                      class="fa fa-ban filter_icon"></a><a href="#" class="fa fa-ellipsis-v filter_icon"></a></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-laptop icon-laptop"></i></td>
+                  <td class="table_standart-cell">ინვენტარის მოთხოვნა</td>
+                  <td class="table_standart-cell">შოთა მიქაია, 1 სხვა</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">03/02/2019</td>
+                  <td class="text-right table_standart-cell"><a href="#" class="fa fa-paperclip filter_icon"></a></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-id-card-alt icon-idCard"></i></td>
+                  <td class="table_standart-cell">დინამიური განცხადება</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">სოფიო გაჩეჩილაძე, 1 სხვა</td>
+                  <td class="table_standart-cell">10/04/2019</td>
+                  <td class="text-right table_standart-cell"></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-sync-alt icon-sync"></i></td>
+                  <td class="table_standart-cell">მარაგებზე ინფორმაციის განახლების მოთხოვნა</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">ნიკოლოზ რეხვიაშვილი</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">01/04/2019</td>
+                  <td class="text-right table_standart-cell"></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-university icon-university"></i></td>
+                  <td class="table_standart-cell">ბონუსის გაცემა</td>
+                  <td class="table_standart-cell">ნიკოლოზ რეხვიაშვილი</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">ნიკოლოზ დოლიძე</td>
+                  <td class="table_standart-cell">03/02/2019</td>
+                  <td class="text-right table_standart-cell"></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-university icon-university"></i></td>
+                  <td class="table_standart-cell">წლიური ბონუსის გაცემა</td>
+                  <td class="table_standart-cell">სოფიო გაჩეჩილაძე</td>
+                  <td class="table_standart-cell">ერეკლე დოლიძე</td>
+                  <td class="table_standart-cell">შოთა მიქაია</td>
+                  <td class="table_standart-cell">03/02/2019</td>
+                  <td class="text-right table_standart-cell"><a href="#" class="fa fa-paperclip filter_icon"></a></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-map-marker-alt icon-location"></i></td>
+                  <td class="table_standart-cell">ადგილობრივი შეხვედრის დაგეგმვა</td>
+                  <td class="table_standart-cell">ერეკლე დოლიძე</td>
+                  <td class="table_standart-cell">სოფიო გაჩეჩილაძე</td>
+                  <td class="table_standart-cell">ირაკლი ნადარეიშვილი</td>
+                  <td class="table_standart-cell">05/03/2019</td>
+                  <td class="text-right table_standart-cell"></td>
+                </tr>
+                <tr>
+                  <td class="table_standart-cell"><i class="fas fa-laptop icon-laptop"></i></td>
+                  <td class="table_standart-cell">ინვენტარის მოთხოვნა</td>
+                  <td class="table_standart-cell">დავით ნადარეიშვილი</td>
+                  <td class="table_standart-cell">ელენე ორჯონიკიძე</td>
+                  <td class="table_standart-cell">სოფიო გაჩეჩილაძე</td>
+                  <td class="table_standart-cell">15/01/2019</td>
+                  <td class="text-right table_standart-cell"></td>
+                </tr>
+      
+              </tbody>
+              <tfoot>
+      
+                <tr class="table_standart-cell">
+                  <th>
+      
+                  </th>
+                  <th>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle table_dropdown" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ჩანაწერები ერთ გვერდზე:
+                      </a>
+      
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+      
+                  <th>
+                    <a href="#"><img src="images/Group 702.png" alt=""></a>
+                    <span>1-10 of 30</span>
+                    <a href="#" class="arrow_left-icon fas fa-chevron-left"></a>
+                    <a href="#" class="arrow_right-icon fas fa-chevron-right"></a>
+                  </th>
+                  <th></th>
+                </tr>
+              </tfoot>
+            </table>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
